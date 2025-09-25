@@ -12,6 +12,9 @@ nav {
     a:visited {
       color: #ffffff;
     }
+    a:unvisited {
+      color: #ffffff;
+    }
     padding: 10px;
     margin-bottom: 20px;
     display: flex;
