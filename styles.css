@@ -1,24 +1,10 @@
-.botão-projetos {
-  display: inline-block;
-  padding: 12px 32px;
-  background-color: #004e14;
-  color: #fff;
-  font-size: 40px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 1s;
-}
-.botão-projetos:hover {
-  background-color: #00ff4c;
-}
-
 body {
-    background-color: #b3b3b3;
+  background-color: #b3b3b3;
 }
 
 img {
-    max-width: 300px;
-    height: auto;
+  max-width: 300px;
+  height: auto;
 }
 
 * {
@@ -27,7 +13,10 @@ img {
   margin: 0;
 }
 
-header,footer, section, footer {
+header,
+footer,
+section,
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,9 +42,107 @@ section:nth-child(1) {
   background-size: cover;
   color: white;
 }
+
 .Hero-text {
   position: absolute;
-  top: 50%;   
+  top: 50%;
+  font: bold 30px sans-serif;
+}
+
+.botão-projetos {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: #63787e;
+  color: #fff;
+  font-size: 40px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background 1s;
+  text-decoration: none;
+}
+
+.botão-projetos:hover {
+  background-color: #77a19a;
+}
+
+#labs-section {
+  background: #1d232e;
+  padding: 32px 0;
+  position: relative;
+}
+
+#labs-section .labs-header h2 {
+  color: #a8c2c3;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 2;
+  font-size: 2.0em;
+  margin: 0;
+}
+
+#labs-section .labs-header p {
+  color: #a8c2c3;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  margin: 0;
+}
+
+.labs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 24px;
+  margin-top: 24px;
+}
+
+.lab-btn {
+  background: #63787e;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 24px 32px;
+  min-width: 260px;
+  max-width: 320px;
+  text-align: left;
+  text-decoration: none;
+  color: #1d232e;
+  font-weight: normal;
+  transition: box-shadow 0.2s, background 0.2s;
+  display: block;
+}
+
+.lab-btn:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+  background: #77a19a;
+  transition: background 1s;
+}
+
+#navegador ul {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+#navegador li {
+  list-style: none;
+  display: inline;
+  margin: 0 15px;
+}
+
+#navegador a {
+  color: white;
+  text-decoration: none;
+  display: inline;
+}
+
+#navegador {
+  position: absolute;
+  top: 140px;
+  right: 0;
+  margin: 10px;
+  font: bold 20px sans-serif;
 }
 
 section:nth-child(3) {

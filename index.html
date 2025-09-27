@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="utf-8">
   <title>Gonçalo Oliveira</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header>
     <h1>Menu</h1>
@@ -17,38 +19,59 @@
 
     <a href="#labs" class="botão-projetos">Projetos</a>
 
+    <nav id="navegador">
+      <ul>
+        <li><a href="#Inicio">Início</a></li>
+        <li><a href="#labs-section">Laboratórios</a></li>
+        <li><a href="#DIW">Cadeira</a></li>
+      </ul>
+    </nav>
+
   </section>
 
-  <section id="labs">
-    
-     <nav>
-  <a href="lab1/index.html">Lab1</a>
-  <a href="lab2/index.html">Lab2</a>
-  <a href="lab3/index.html">Lab3</a>
-</nav>
+  <section id="labs-section">
+    <div class="labs-header">
+      <h2>Projetos / Labs</h2>
+      <p>Alguns exercícios desenvolvidos ao longo da UC.</p>
+    </div>
+
+    <div class="labs-grid">
+      <a href="lab1/index.html" class="lab-btn">
+        <strong>Lab 1</strong>
+        <p>Estrutura base e semântica</p>
+      </a>
+      <a href="lab2/index.html" class="lab-btn">
+        <strong>Lab 2</strong>
+        <p>Estilos e layout responsivo</p>
+      </a>
+      <a href="lab3/index.html" class="lab-btn">
+        <strong>Lab 3</strong>
+        <p>Interatividade com JS</p>
+      </a>
+    </div>
   </section>
 
   <main>
 
-    <section class ="DIW">
+    <section id="DIW">
 
-    <p>Eis a minha primeira página Web!</p>
-    <p>
+      <p>Eis a minha primeira página Web!</p>
+      <p>
 
-      Na Unidade Curricular de 
-  <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank">
-        Desenvolvimento de Interfaces Web
-      </a>
-      abordaremos as seguintes tecnologias Web 🌐:
-    </p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>React e Next.js</li>
-    </ul>
-    <p>Iremos criar soluções criativas!</p>
-    <img src="lab1/images/image.svg" alt="Desenvolvimento de Interfaces Web">
+        Na Unidade Curricular de
+        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank">
+          Desenvolvimento de Interfaces Web
+        </a>
+        abordaremos as seguintes tecnologias Web 🌐:
+      </p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React e Next.js</li>
+      </ul>
+      <p>Iremos criar soluções criativas!</p>
+      <img src="lab1/images/image.svg" alt="Desenvolvimento de Interfaces Web">
 
     </section>
   </main>
@@ -58,4 +81,5 @@
   </footer>
 
 </body>
+
 </html>
