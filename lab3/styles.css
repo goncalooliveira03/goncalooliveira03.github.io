@@ -1,0 +1,33 @@
+body {
+    background-color: #ffffff;
+}
+header {
+    background-color: #c78667;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    background-color: #525252;
+    a:visited {
+      color: #ffffff;
+    }
+    a:unvisited {
+      color: #ffffff;
+    }
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer {
+    background-color: #525252;
+    color: white;
+    text-align: center;
+    padding: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Multimédia</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .Fotografias {
+                display: flex;
+                flex-direction: row;
+                flex-flow: wrap;
+                gap: 10px;
+            }
+
+            .Fotografias img {
+                width: 120px;
+                height: 80px;
+                border-radius: 15px;
+            }
+
+            .poema {
+                max-width: 400px;
+                background-color: #f0f0f0;
+                padding: 10px;
+                border-radius: 25px;
+                font-family: 'Georgia', serif;
+                line-height: 1.4;
+                text-align: center;
+            }
+
+            .poema p:nth-child(2n) { 
+                font-weight: bold;
+            }                              
+            .poema p:nth-child(2n+1) { 
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Tóquio</h1>
+        </header>
+        <main>
+            <nav>
+  <a href="index.html">Home</a>
+  <a href="local.html">Localização</a>
+  <a href="multimedia.html">Multimédia</a>
+  <a href="info.html">Informação</a>
+</nav>
+
+            <h2>Multimédia</h2>
+            <p>Nesta página encontra conteúdo multimédia sobre Tóquio.</p>
+
+            <p>
+                <a href="#Fotografias">Fotografias</a> 
+                <a href="#Vídeo">Vídeo</a>
+                <a href="#Poesia">Poesia</a>
+            </p>
+
+            <section>
+                <h3 id="Fotografias">Fotografias</h3>
+
+                <div class="Fotografias">
+                    <img src="images/TokyoMercado.jpg" alt="Foto Tokyo Mercado" >
+                    <img src="images/TokyoMonte.png" alt="Foto Tokyo Monte" >
+                    <img src="images/TokyoNatureza.png" alt="Foto Tokyo Natureza" >
+                    <img src="images/TokyoPassadeira.png" alt="Foto Tokyo Passadeira" >
+                    <img src="images/TokyoPonte.png" alt="Foto Tokyo Ponte" >
+                    <img src="images/TokyoSinaisLED.jpg" alt="Foto Tokyo Sinais LED" >
+                    <img src="images/TokyoTemplo.jpg" alt="Foto Tokyo Templo" >
+                    <img src="images/TokyoVistaCidade.jpg" alt="Foto Tokyo Vista Cidade" >
+                </div>
+            </section>
+            <section>
+                <h3 id="Vídeo">Vídeo</h3>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0R_LWN_Wic8?si=AmyO4aPKlQE19fAR&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </section>
+
+            <section>
+                <h3 id="Poesia">Poesia</h3>
+                <div class="poema">
+                <p> Tóquio <br>
+                    Entre néons e templos antigos,<br>
+                    a cidade respira em dois mundos.<br>
+                    Silêncio de jardins secretos,<br>
+                    ruído das ruas que nunca dormem.<br>
+
+                   <p>No reflexo das luzes,<br>
+                    cada passo é um instante eterno.<br>  
+                    Tóquio — onde o presente<br>
+                    se encontra com a eternidade.<br>
+                    </p>
+                </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>DIW 2025</p>
+        </footer>
+    </body>
+</html>
