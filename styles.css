@@ -24,10 +24,19 @@ footer {
 }
 
 header {
-  background: red;
-  position: sticky;
-  height: 10vh;
+  background: #1d232e;
+  color: white;
+  font-size: 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 6vh;
   top: 0;
+  z-index: 10000;
+}
+
+section {
+  scroll-margin-top: 12vh;
 }
 
 section:nth-child(1) {
@@ -45,7 +54,7 @@ section:nth-child(1) {
 
 .Hero-text {
   position: absolute;
-  top: 50%;
+  top:55%;
   font: bold 30px sans-serif;
 }
 
@@ -69,6 +78,9 @@ section:nth-child(1) {
   background: #1d232e;
   padding: 32px 0;
   position: relative;
+  /* permitir que o header sticky sobreponha esta secção ao rolar */
+  margin-top: -6vh;
+  padding-top: calc(32px + 6vh); /* compensar o espaço interno */
 }
 
 #labs-section .labs-header h2 {
@@ -153,4 +165,73 @@ footer {
   height: 5vh;
   background: black;
   color: white;
+}
+
+#DIW {
+  background: linear-gradient(180deg, #1d232e 10%, #77a19a 80%);
+  padding: 48px 20px;
+  color: #102a43;
+}
+
+.diw-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 32px;
+  align-items: start;
+}
+
+.diw-text h2 {
+  margin: 0 0 12px 0;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.diw-sub-text {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.diw-languages-list {
+  display: flex;
+  gap: 12px 24px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+.diw-languages-list li {
+  background: #a8c2c3;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #0a2540;
+  font-weight: 600;
+}
+
+.diw-languages-list li:hover {
+  background: #63787e;
+  color: white;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.diw-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.diw-note {
+  font-weight: 600;
+  color: #0a2540;
+}
+
+@media (max-width: 900px) {
+  .diw-inner {
+    grid-template-columns: 1fr;
+    padding: 0 12px;
+  }
+  #navegador { top: 10px; }
 }
