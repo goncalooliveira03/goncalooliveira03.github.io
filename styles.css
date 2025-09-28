@@ -15,8 +15,8 @@ img {
 
 header,
 footer,
-section,
-footer {
+section
+ {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,11 +39,6 @@ section {
   scroll-margin-top: 12vh;
 }
 
-section:nth-child(1) {
-  height: 90vh;
-  background: purple;
-}
-
 .Hero {
   background-image: url('images/image.png');
   background-position: center;
@@ -54,7 +49,7 @@ section:nth-child(1) {
 
 .Hero-text {
   position: absolute;
-  top:55%;
+  top: 55%;
   font: bold 30px sans-serif;
 }
 
@@ -78,9 +73,8 @@ section:nth-child(1) {
   background: #1d232e;
   padding: 32px 0;
   position: relative;
-  /* permitir que o header sticky sobreponha esta secção ao rolar */
   margin-top: -6vh;
-  padding-top: calc(32px + 6vh); /* compensar o espaço interno */
+  padding-top: calc(32px + 6vh);
 }
 
 #labs-section .labs-header h2 {
@@ -112,7 +106,7 @@ section:nth-child(1) {
 .lab-btn {
   background: #63787e;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   padding: 24px 32px;
   min-width: 260px;
   max-width: 320px;
@@ -125,7 +119,7 @@ section:nth-child(1) {
 }
 
 .lab-btn:hover {
-  box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
   background: #77a19a;
   transition: background 1s;
 }
@@ -202,6 +196,7 @@ footer {
   padding: 0;
   margin: 0 0 16px 0;
 }
+
 .diw-languages-list li {
   background: #a8c2c3;
   padding: 8px 12px;
@@ -228,10 +223,13 @@ footer {
   color: #0a2540;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .diw-inner {
     grid-template-columns: 1fr;
     padding: 0 12px;
   }
-  #navegador { top: 10px; }
+
+  #navegador {
+    top: 10px;
+  }
 }

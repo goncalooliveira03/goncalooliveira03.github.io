@@ -1,103 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <title>Multimédia</title>
-        <link rel="stylesheet" href="styles.css">
-        <style>
-            .Fotografias {
-                display: flex;
-                flex-direction: row;
-                flex-flow: wrap;
-                gap: 10px;
-            }
 
-            .Fotografias img {
-                width: 120px;
-                height: 80px;
-                border-radius: 15px;
-            }
+<head>
+  <meta charset="utf-8">
+  <title>Gonçalo Oliveira</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-            .poema {
-                max-width: 400px;
-                background-color: #f0f0f0;
-                padding: 10px;
-                border-radius: 25px;
-                font-family: 'Georgia', serif;
-                line-height: 1.4;
-                text-align: center;
-            }
-
-            .poema p:nth-child(2n) { 
-                font-weight: bold;
-            }                              
-            .poema p:nth-child(2n+1) { 
-                font-weight: bold;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Tóquio</h1>
-        </header>
-        <main>
-            <nav>
+<body>
+  <header>
+  <h1><span>Tóquio</span> <span class="hamburguer">&#9776;</span> </h1>
+  <nav>
   <a href="index.html">Home</a>
   <a href="local.html">Localização</a>
   <a href="multimedia.html">Multimédia</a>
   <a href="info.html">Informação</a>
 </nav>
+</header>
 
-            <h2>Multimédia</h2>
-            <p>Nesta página encontra conteúdo multimédia sobre Tóquio.</p>
+  <section class="Hero">
+    <div class="Hero-text">
+      "Whether you think you can, or you think you can’t – you’re right." — Henry Ford
+    </div>
 
-            <p>
-                <a href="#Fotografias">Fotografias</a> 
-                <a href="#Vídeo">Vídeo</a>
-                <a href="#Poesia">Poesia</a>
-            </p>
+    <a href="#labs-section" class="botão-projetos">Começar</a>
 
-            <section>
-                <h3 id="Fotografias">Fotografias</h3>
+  </section>
 
-                <div class="Fotografias">
-                    <img src="images/TokyoMercado.jpg" alt="Foto Tokyo Mercado" >
-                    <img src="images/TokyoMonte.png" alt="Foto Tokyo Monte" >
-                    <img src="images/TokyoNatureza.png" alt="Foto Tokyo Natureza" >
-                    <img src="images/TokyoPassadeira.png" alt="Foto Tokyo Passadeira" >
-                    <img src="images/TokyoPonte.png" alt="Foto Tokyo Ponte" >
-                    <img src="images/TokyoSinaisLED.jpg" alt="Foto Tokyo Sinais LED" >
-                    <img src="images/TokyoTemplo.jpg" alt="Foto Tokyo Templo" >
-                    <img src="images/TokyoVistaCidade.jpg" alt="Foto Tokyo Vista Cidade" >
-                </div>
-            </section>
-            <section>
-                <h3 id="Vídeo">Vídeo</h3>
+  <section id="labs-section">
+    <div class="labs-header">
+      <h2>Projetos / Labs</h2>
+      <p>Alguns exercícios desenvolvidos ao longo da UC.</p>
+    </div>
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0R_LWN_Wic8?si=AmyO4aPKlQE19fAR&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="labs-grid">
+      <a href="lab1/index.html" class="lab-btn">
+        <strong>Lab 1</strong>
+        <p>Estrutura base e semântica</p>
+      </a>
+      <a href="lab2/index.html" class="lab-btn">
+        <strong>Lab 2</strong>
+        <p>Estilos e layout responsivo</p>
+      </a>
+      <a href="lab3/index.html" class="lab-btn">
+        <strong>Lab 3</strong>
+        <p>Interatividade com JS</p>
+      </a>
+    </div>
+  </section>
 
-            </section>
+  <main>
 
-            <section>
-                <h3 id="Poesia">Poesia</h3>
-                <div class="poema">
-                <p> Tóquio <br>
-                    Entre néons e templos antigos,<br>
-                    a cidade respira em dois mundos.<br>
-                    Silêncio de jardins secretos,<br>
-                    ruído das ruas que nunca dormem.<br>
+    <section id="DIW">
+      <div class="diw-inner">
+        <div class="diw-text">
+          <h2>Sobre a Unidade</h2>
+          <p class="diw-sub-text">Eis a minha primeira página Web! Na Unidade Curricular de <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank">Desenvolvimento de Interfaces Web</a> abordaremos as seguintes tecnologias Web:</p>
+          <ul class="diw-languages-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React e Next.js</li>
+          </ul>
+          <p class="diw-note">Iremos criar soluções criativas!</p>
+        </div>
+        <div class="diw-media">
+          <img src="lab1/images/image.svg" alt="Desenvolvimento de Interfaces Web">
+        </div>
+      </div>
+    </section>
+  </main>
 
-                   <p>No reflexo das luzes,<br>
-                    cada passo é um instante eterno.<br>  
-                    Tóquio — onde o presente<br>
-                    se encontra com a eternidade.<br>
-                    </p>
-                </p>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>DIW 2025</p>
-        </footer>
-    </body>
+  <footer>
+    <p>Universidade Lusófona © 2025</p>
+  </footer>
+
+</body>
+
 </html>
