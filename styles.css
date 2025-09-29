@@ -162,7 +162,7 @@ footer {
 }
 
 #DIW {
-  background: linear-gradient(180deg, #1d232e 10%, #77a19a 80%);
+  background: linear-gradient(180deg, #1d232e 20%, #77a19a 80%);
   padding: 48px 20px;
   color: #102a43;
 }
@@ -177,12 +177,14 @@ footer {
 }
 
 .diw-text h2 {
+  color: #77a19a;
   margin: 0 0 12px 0;
   font-size: 2rem;
   text-align: left;
 }
 
 .diw-sub-text {
+  color: #77a19a;
   font-size: 1.15rem;
   line-height: 1.6;
   margin-bottom: 16px;

@@ -87,6 +87,7 @@ section {
 #labs-section { display: flow-root; }
 
 #labs-section .labs-header h2 {
+
   color: #793c0d;
   position: absolute;
   top: 10px;
@@ -399,3 +400,77 @@ h1 {
   }
   .poema-section h3 { position: static; margin-bottom: 8px; }
   }
+
+  .Local-Inicio {
+  background-image: url('images/RuaTokyo.jpg');
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+.Local-Inicio-Texto {
+  position: absolute;
+  top: 55%;
+  font: bold 30px sans-serif;
+}
+
+.Mapa-Localizacao {
+  background: linear-gradient(180deg, #261105 20%, #793c0d 80%);
+  padding: 52px 20px;
+  position: relative;
+  margin-top: -6vh;
+  padding-top: calc(32px + 6vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.Mapa-Localizacao h2 {
+  color: #c2612b;
+  font-size: 2.0em;
+  margin-bottom: 16px;
+}
+
+.Mapa-Localizacao p {
+  color: #c2612b;
+  max-width: 500px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.Mapa-Row {
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Mapa-Texto {
+  flex: 1 1 40%;
+  max-width: 520px;
+}
+.Mapa-Texto p { margin: 0; }
+
+.Mapa-Google {
+  flex: 1 1 60%;
+  max-width: 640px;
+}
+.Mapa-Google iframe {
+  width: 100%;
+  height: 360px;
+  border: 0;
+  border-radius: 8px;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .Mapa-Row { flex-direction: column; gap: 12px; }
+  .Mapa-Google iframe { height: 240px; }
+  .Mapa-Localizacao p { text-align: left; }
+}
