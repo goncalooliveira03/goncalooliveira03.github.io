@@ -2,69 +2,34 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Informação</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        table {
-    border-collapse: collapse;
-    margin: 20px 0;
-    width: 100%;
-    font-family: 'Arial', sans-serif;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-th {
-    background: #c78667;    
-    color: #ffffff;   
-    padding: 12px 16px;
-    text-align: left;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-td {
-    background: #fafafa;       
-    color: #333333;            
-    padding: 12px 16px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-tr:nth-child(even) td {
-    background: #f0f4ff;
-}
-
-table a {
-    color: #06e2ff;            
-    font-weight: 500;
-    text-decoration: none;
-}
-
-table a:hover {
-    text-decoration: underline;
-}
-
-    </style>
+  <meta charset="utf-8">
+  <title>Gonçalo Oliveira</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-        <header>
-            <h1>Tóquio</h1>
-        </header>
-        <main>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="local.html">Localização</a>
-                <a href="multimedia.html">Multimédia</a>
-                <a href="info.html">Informação</a>
-            </nav>
+  <header>
+  <h1><span>Tóquio</span> <span class="hamburguer">&#9776;</span> </h1>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="local.html">Localização</a>
+  <a href="multimedia.html">Multimédia</a>
+  <a href="info.html">Informação</a>
+</nav>
+</header>
 
-            <h2>Informações</h2>
-            <p>Informações sobre Tóquio.</p>
-            <table border="1">
+  <section class="Local-Inicio">
+    <div class="Local-Inicio-Texto">
+      Entre no coração do Japão moderno e tradicional.
+    </div>
+
+  </section>
+
+  <main>
+
+  <section class="tabela-layout">
+    <div class="tabela-conteudo">
+      <div class="g1"><table border="1">
                 <tr>
                     <th rowspan="2">Demografia</th>
                     <td>População</td>
@@ -87,23 +52,42 @@ table a:hover {
                     <td colspan="2"><a href="https://www.gotokyo.org/en/index.html">www.gotokyo.org</a></td>
                 </tr>
             </table>
-
-            <section class="Curiosidades">
-                <h2>🏙️ 5 Curiosidades sobre Tóquio</h2>
+        </div>
+      <div class="g2"><img src="images/TokyoNight.jpg" alt="FotoTabela1"></div>
+      <div class="g3"><h2>🏙️ 5 Curiosidades sobre Tóquio</h2>
                 <ul>
                     <li>Maior área metropolitana do mundo</li>
                     <li>Máquinas de venda por todo o lado</li>
                     <li>O cruzamento mais movimentado do mundo</li>
                     <li>Comboios com pontualidade extrema</li>
                     <li>Tradição e modernidade lado a lado</li>
-                </ul>
-            </section>
+                </ul></div>
+      <div class="g4"><h2>História / Cultura</h2>
+        <ul>
+            <li>Nome original: Edo (antes de 1868).</li>
+            <li>Ano em que se tornou capital do Japão: 1868 (quando mudou de Edo para Tóquio).</li>
+            <li>Eventos históricos importantes: Jogos Olímpicos de 1964 e 2021.</li>
+            <li>Templo mais famoso: Senso-ji (em Asakusa).</li>
+</ul>
+</div>
+      <div class="g5"><img src="images/RuaTokyoChuva.jpg" alt="FotoTabela2"></div>
+      <div class="g6"><h2>Transportes</h2>
+        <ul>
+            <li>A estação de Shinjuku é a mais movimentada do mundo (cerca de 3,5 milhões de passageiros por dia).</li>
+            <li>O metro de Tóquio tem mais de 280 estações.</li>
+        </ul>
+</div>
+      <div class="g7">Espaço 7 (related posts)</div>
+      <div class="g8">Espaço 8 (footer)</div>
+    </div>
+  </section>
 
-            
-        </main>
-        <footer>
-            <p>DIW 2025</p>
-        </footer>
+  </main>
+
+  <footer>
+    <p>Universidade Lusófona © 2025</p>
+  </footer>
+
 </body>
 
 </html>
