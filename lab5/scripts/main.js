@@ -11,7 +11,7 @@ function sai() {
   area.style.backgroundColor = "#fc8e8eff";
 }
 
-function mudaCor(cor) {
+mudaCor = (cor) => {
   const h2 = document.querySelector('#mudaCor h2');
   h2.style.color = cor;
 }
