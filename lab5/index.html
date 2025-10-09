@@ -13,37 +13,37 @@
 
   <main>
     <section>
-      <h2>1. Cuidado ao passares aqui o rato ⚠️</h2>
+      <h2>1. Experimenta passar aqui o rato</h2>
       <p id="hoverArea" onmouseover="entra()" onmouseout="sai()">
-        ⚠️ CUIDADO ⚠️
+        Passa o rato por aqui! 🐭
       </p>
     </section>
 
-    <section>
+    <section id="mudaCor">
       <h2>2. Muda a cor!</h2>
       <button onclick="mudaCor('red')">Vermelho</button>
       <button onclick="mudaCor('green')">Verde</button>
       <button onclick="mudaCor('blue')">Azul</button>
     </section>
 
-    <section>
-      <h2>3. Experimenta clicar 1x na imagem e depois 2x!</h2>
-      <img id="gato" src="images/gato bebe.jpg"
-           alt="Gatinho fofo"
-           onclick="mudaImagem()"
-           ondblclick="voltaImagem()">
+    <section id="experimentaEscrever">
+      <h2>3. Experimenta Escrever </h2>
+        <input type="text" id="textoInput" oninput="mudaCorTexto()" placeholder="Escreve algo aqui...">
+      
+    </section>
+
+    <section id="mudaCorInput">
+      <h2>4. Escreve uma cor em inglês</h2>
+        <input type="text" id="corInput" placeholder="Ex: red, blue, green..." oninput="mudaCorInput()">
+      
     </section>
 
     <section>
-      <h2>4. Contador de cliques 🧮</h2>
+      <h2>5. Contador de cliques 🧮</h2>
       <button id="btnConta" onclick="conta()">Conta!</button>
       <span id="valor">0</span>
     </section>
 
-    <section>
-      <h2>5. Coordenadas do Rato (Para ele não fugir!)</h2>
-      <p id="coords" onmousemove="segueRato(event)">x: 0, y: 0</p>
-    </section>
     <script src="scripts/main.js"></script>
   </main>
 
