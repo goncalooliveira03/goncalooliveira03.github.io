@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trabalho Eventos Java</title>
   <link rel="stylesheet" href="/lab4/css/styles.css">
 </head>
+
 <body>
   <header>
     <h1>Brincar com o JavaScript</h1>
@@ -21,27 +23,48 @@
 
     <section id="mudaCor">
       <h2>2. Muda a cor!</h2>
-      <button onclick="mudaCor('red')">Vermelho</button>
-      <button onclick="mudaCor('green')">Verde</button>
-      <button onclick="mudaCor('blue')">Azul</button>
+      <button onclick="mudaCor('red')" data-color="red">Vermelho</button>
+      <button onclick="mudaCor('green')" data-color="green">Verde</button>
+      <button onclick="mudaCor('blue')" data-color="blue">Azul</button>
     </section>
 
     <section id="experimentaEscrever">
       <h2>3. Experimenta Escrever </h2>
-        <input type="text" id="textoInput" oninput="mudaCorTexto()" placeholder="Escreve algo aqui...">
-      
+      <input type="text" id="textoInput" oninput="mudaCorTexto()" placeholder="Escreve algo aqui...">
+
     </section>
 
-    <section id="mudaCorInput">
-      <h2>4. Escreve uma cor em inglês</h2>
-        <input type="text" id="corInput" placeholder="Ex: red, blue, green..." oninput="mudaCorInput()">
-      
+    <section id="mudaCorFundo">
+      <h2>4. Muda a cor do fundo</h2>
+      <select id="corFundoSelect" onchange="mudaCorFundo()">
+        <option value="white">White</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+      </select>
     </section>
 
     <section>
       <h2>5. Contador de cliques 🧮</h2>
       <button id="btnConta" onclick="conta()">Conta!</button>
       <span id="valor">0</span>
+    </section>
+
+    <section id="formulario">
+      <h2>6. Formulário</h2>
+      <form>
+        <input id="nome" type="text" placeholder="insira o seu nome">
+        <input id="idade" type="number" placeholder="insira a sua idade">
+        <input type="submit">
+        <p id="mensagem"></p>
+      </form>
+    </section>
+
+    <section id="contadorAutomatico">
+      <h2>7. Contador Automático</h2>
+      <p>O contador automático está a contar de 5 em 5 segundos.</p>
+      <p id="contadorAuto">0</p>
     </section>
 
     <script src="scripts/main.js"></script>
@@ -51,4 +74,5 @@
   </footer>
 
 </body>
+
 </html>

@@ -30,13 +30,40 @@ function mudaCorTexto() {
 
 }
 
-function mudaCorInput() {
-  const cor = document.getElementById("corInput").value.trim().toLowerCase();
-  document.body.style.backgroundColor = cor;
+function mudaCorFundo() {
+  document.querySelector('select').onchange = function() {
+    document.querySelector('body').style.backgroundColor = this.value;
+}
 }
 
-let contador = 0;
-function conta() {
-  contador++;
-  document.getElementById("valor").textContent = contador;
+if(!localStorage.getItem('contador')) {
+  localStorage.setItem('contador', 0);
 }
+
+function conta() {
+  let contador = localStorage.getItem('contador');
+  contador++;
+  document.getElementById('valor').textContent = contador;
+  localStorage.setItem('contador', contador);
+}
+document.querySelector('#valor').textContent = localStorage.getItem('contador');
+
+function formulario() {
+  document.querySelector('form').onsubmit = function(event) {
+    event.preventDefault();
+    const nome = document.getElementById('nome').value;
+    const idade = document.getElementById('idade').value;
+    document.querySelector('#mensagem').textContent = `Olá, o/a  ${nome} tem ${idade} anos.`;
+  }
+}
+
+formulario();
+
+function contadorAutomatico() {
+  let valorContadorAutomatico = localStorage.getItem('valorContadorAutomatico');
+    valorContadorAutomatico++;
+    document.getElementById('contadorAuto').textContent = valorContadorAutomatico;
+    localStorage.setItem('valorContadorAutomatico', valorContadorAutomatico);
+}
+setInterval(contadorAutomatico, 1000);
+countadorAutomatico();
