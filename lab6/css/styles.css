@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(250, 250, 250);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: #ddd;
+  padding: 10px;
+  align-items:center;
+  justify-content: space-between;
+  display: flex;
+}
+
+header nav ul {
+    display: flex;
+  margin: 0 25px;
+  text-decoration: none;
+  color: #333;
+  list-style: none;
+    justify-content: flex-end;
+}
+
+header nav a {
+    display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: #333;
+  margin: 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1 {
+  color: #333;
+}
