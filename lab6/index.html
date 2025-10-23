@@ -1,35 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
-
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Loja</title>
   <link rel="stylesheet" href="/lab6/css/styles.css" />
 </head>
-
-<header>
-    <h1>Loja</h1>
-    <nav>
-        <ul>
-            <li> <a href="#cesto">Cesto</a></li>
-            <li> <a href="#produtos">Produtos</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <section id="Produtos">
-        <h2>Produtos</h2>
-        <div class="produto">
-    </section>
-
-    <section id="Cesto">
-        <h2>Cesto</h2>
-        <ul id="cesto-lista"></ul>
-    </section>
-</main>
-
 <body>
-    <script src="produtos.js"></script>
-    <script src="scripts/main.js"></script>
+  <header class="topo">
+    <h1>Loja</h1>
+
+    <nav aria-label="Secções do site">
+      <ul class="menu">
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#cesto">Cesto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="produtos" aria-labelledby="tit-produtos">
+      <h2 id="tit-produtos">Selecione os seus Produtos</h2>
+
+      <section id="lista-produtos" class="grade-produtos" aria-label="Lista de produtos"></section>
+    </section>
+
+    <section id="cesto" aria-labelledby="tit-cesto">
+      <h2 id="tit-cesto">Cesto</h2>
+
+      <ul id="lista-cesto" class="lista-cesto" aria-live="polite"></ul>
+
+      <p class="total"><strong>Total:</strong> <output id="total">€0,00</output></p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Example.svg"
+           alt="Logótipo genérico" width="20" height="20" />
+      © <time id="ano" datetime="">2025</time> Loja Demo
+    </p>
+  </footer>
+  <script src="/lab6/scripts/produtos.js"></script>
+  <script src="/lab6/scripts/main.js"></script>
 </body>
+</html>
