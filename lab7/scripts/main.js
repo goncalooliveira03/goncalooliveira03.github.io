@@ -1,6 +1,13 @@
 let cesto = [];
 
 document.addEventListener('DOMContentLoaded', function () {
+  // (opcional) atualiza ano no rodapé, se existir <time id="ano">
+  const elAno = document.getElementById('ano');
+  if (elAno) {
+    const y = String(new Date().getFullYear());
+    elAno.textContent = y;
+    elAno.setAttribute('datetime', y);
+  }
 
   // repõe cesto guardado
   carregarCestoGuardado();
@@ -85,7 +92,9 @@ function criarProduto(produto) {
   return artigo;
 }
 
+// ---------------------------
 // Cesto: adicionar / remover / mostrar
+// ---------------------------
 function adicionarAoCesto(produto) {
   // verifica se já existe
   const existente = cesto.find(function (p) { return p.id === produto.id; });
