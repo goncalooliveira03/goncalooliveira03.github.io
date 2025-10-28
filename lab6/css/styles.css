@@ -1,5 +1,5 @@
 :root{
-  --roxo:#6f1d9b;
+  --laranja:#be5703;
   --bg:#f6f6f8;
   --cartao:#ffffff;
   --borda:#e7e7e7;
@@ -15,7 +15,7 @@ body{
 }
 
 .topo{
-  background: var(--roxo);
+  background: var(--laranja);
   color:#fff;
   padding: 14px 4%;
   display:flex;
